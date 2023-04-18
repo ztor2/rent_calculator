@@ -21,6 +21,6 @@ with st.form(key='main'):
 if submit:
     rent = RentCalculator(purpose, area, income, price, start, end)
     if rent != None:
-        st.write(f"임대료는 **{rent}원** 입니다.")
+        st.write(f"<p style='font-size:18px;'>임대료는 {rent}원 입니다.</p>", unsafe_allow_html=True)
     else:
         st.write(f"임대 시작일과 종료일을 확인해주세요.")
