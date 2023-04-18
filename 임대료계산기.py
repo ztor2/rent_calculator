@@ -4,7 +4,7 @@ from RentCalculator import *
 from PIL import Image
 
 fav = Image.open("favicon.ico")
-st.set_page_config(page_icon=fav)
+st.set_page_config(page_title="임대료계산기", page_icon=fav)
 st.title("임대료 계산기")
 
 with st.form(key='main'):
