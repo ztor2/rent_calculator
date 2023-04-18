@@ -11,7 +11,7 @@ with st.form(key='main'):
     
     purpose = st.selectbox("**토지 구분**을 선택하세요. ", ("경작", "비경작"))
     area = st.number_input("**임대 면적**을 입력해주세요. (단위: m\u00b2)", format="%g", step=1, min_value=0)
-    income = st.number_input("**단위면적당 농업 총수입**을 입력해주세요. (단위면적: m\u00b2)", format="%g", step=1, min_value=0)
+    income = st.number_input("**단위면적당 농업 총수입**을 입력해주세요. (2022년 기준: 2401원, 단위면적: m\u00b2)", format="%g", step=1, min_value=0, value=2401)
     price = st.number_input("**개별 공시지가**를 입력해주세요. (단위면적: m\u00b2)", format="%g", step=1, min_value=0)
     start = st.date_input("**임대 시작일**을 입력해주세요.")
     end = st.date_input("**임대 종료일**을 입력해주세요.")
