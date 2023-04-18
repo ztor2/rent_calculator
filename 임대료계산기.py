@@ -16,6 +16,7 @@ with st.form(key='main'):
     start = st.date_input("**임대 시작일**을 입력해주세요.")
     end = st.date_input("**임대 종료일**을 입력해주세요.")
 
+    st.write("")
     submit = st.form_submit_button(label="**계산하기**")
     
 if submit:
