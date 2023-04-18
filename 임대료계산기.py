@@ -29,4 +29,5 @@ if submit:
 st.write("")
 st.write("")
 st.write("")
-st.markdown("*면적 및 개별공시지가는 부동산공시가격 알리미(<a href='www.realtyprice.kr'>www.realtyprice.kr) 에서 확인 가능합니다. <br/> **계산기를 통해 산출된 임대료값은 일반적인 상황(요율감면 등 불포함)을 가정하여 산출되었으므로 실제 임대료와 다를 수 있습니다.", unsafe_allow_html=True)
+st.markdown('''* 면적 및 개별공시지가는 부동산공시가격 알리미(<a href='www.realtyprice.kr'>www.realtyprice.kr) 에서 확인 가능합니다. 
+* 계산기를 통해 산출된 임대료값은 일반적인 상황(요율감면 등 불포함)을 가정하여 산출되었으므로 실제 임대료와 다를 수 있습니다.''', unsafe_allow_html=True)
