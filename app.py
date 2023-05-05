@@ -7,6 +7,11 @@ fav = Image.open("favicon.ico")
 st.set_page_config(page_title="임대료계산기", page_icon=fav)
 st.title("임대료 계산기")
 
+st.markdown("""
+       #MainMenu {visibility: hidden;}
+       footer {visibility: hidden;}
+       """, unsafe_allow_html=True)
+
 with st.form(key='main'):
     
     purpose = st.selectbox("**토지 구분**을 선택하세요. ", ("경작", "비경작"))
