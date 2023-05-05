@@ -8,6 +8,7 @@ st.set_page_config(page_title="임대료계산기", page_icon=fav)
 st.title("임대료 계산기")
 
 st.markdown("""
+       <style>
        #MainMenu {visibility: hidden;}
        footer {visibility: hidden;}
        """, unsafe_allow_html=True)
