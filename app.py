@@ -1,6 +1,6 @@
 import streamlit as st
 import datetime
-from RentCalculator import *
+from rent_calculator import *
 from PIL import Image
 
 fav = Image.open("favicon.ico")
