@@ -5,13 +5,18 @@ from PIL import Image
 
 fav = Image.open("favicon.ico")
 st.set_page_config(page_title="임대료계산기", page_icon=fav)
-st.title("임대료 계산기")
 
 st.markdown("""
        <style>
        #MainMenu {visibility: hidden;}
        footer {visibility: hidden;}
        """, unsafe_allow_html=True)
+
+with open( "style.css" ) as css:
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+    
+
+st.write("<p style='font-size:40px;'><b>임대료 계산기</b>", unsafe_allow_html=True)
 
 with st.form(key='main'):
     
